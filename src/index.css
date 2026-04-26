@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+
+/* ============================================================
+   CSS Reset & Base
+   ============================================================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', 'SF Pro Display', -apple-system, system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-feature-settings: "cv01", "ss03";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+/* ============================================================
+   Theme Variables — Linear Dark (Native)
+   ============================================================ */
+:root,
+[data-theme="dark"] {
+  /* Background Surfaces */
+  --bg-marketing:     #08090a;
+  --bg-primary:       #08090a;
+  --bg-secondary:     #0f1011;
+  --bg-panel:         #0f1011;
+  --bg-panel-solid:   #0f1011;
+  --bg-surface:       #191a1b;
+  --bg-elevated:      #28282c;
+  --bg-hover:         rgba(255, 255, 255, 0.02);
+  --bg-active:        rgba(255, 255, 255, 0.05);
+
+  /* Text */
+  --text-primary:     #f7f8f8;
+  --text-secondary:   #d0d6e0;
+  --text-muted:       #8a8f98;
+  --text-quaternary:  #62666d;
+
+  /* Brand & Accent */
+  --accent:           #5e6ad2;
+  --accent-bright:    #7170ff;
+  --accent-hover:     #828fff;
+  --accent-glow:      rgba(94, 106, 210, 0.15);
+  --accent-secondary: #7a7fad;
+
+  /* Status */
+  --success:          #27a644;
+  --success-secondary:#10b981;
+  --success-glow:     rgba(16, 185, 129, 0.12);
+  --danger:           #ef4444;
+  --danger-glow:      rgba(239, 68, 68, 0.12);
+  --warning:          #f59e0b;
+  --warning-glow:     rgba(245, 158, 11, 0.12);
+
+  /* Borders */
+  --border-subtle:    rgba(255, 255, 255, 0.05);
+  --border-color:     rgba(255, 255, 255, 0.08);
+  --border-hover:     rgba(255, 255, 255, 0.12);
+  --border-solid:     #23252a;
+  --border-secondary: #34343a;
+
+  /* Lines */
+  --line-tint:        #141516;
+  --line-tertiary:    #18191a;
+
+  /* Header */
+  --header-bg:        #0f1011;
+
+  /* Shadows & Depth */
+  --panel-shadow:     none;
+  --shadow-subtle:    rgba(0, 0, 0, 0.03) 0px 1.2px 0px 0px;
+  --shadow-ring:      rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+  --shadow-elevated:  rgba(0, 0, 0, 0.4) 0px 2px 4px;
+  --shadow-dialog:    rgba(0, 0, 0, 0) 0px 8px 2px, rgba(0, 0, 0, 0.01) 0px 5px 2px, rgba(0, 0, 0, 0.04) 0px 3px 2px, rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 0px 1px;
+  --shadow-focus:     rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  /* Overlay */
+  --overlay:          rgba(0, 0, 0, 0.85);
+
+  /* Border Radius Scale */
+  --radius-micro:     2px;
+  --radius-sm:        4px;
+  --radius-comfortable: 6px;
+  --radius-md:        8px;
+  --radius-lg:        12px;
+  --radius-xl:        22px;
+  --radius-pill:      9999px;
+
+  /* Transitions */
+  --transition-fast:  150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:  400ms ease;
+
+  /* Panel */
+  --panel-blur:       0px;
+}
+
+
